@@ -1,0 +1,13 @@
+---
+layout: base.njk
+pagination:
+    data: players
+    size: 1
+    alias: player
+permalink: "players/{{ player.name | slug }}/"
+---
+
+<img alt="{{ player.name }}" src="https://robohash.org/{{ player.name | slug }}?size=300x300">
+
+<h1>{{ player.name }} är av League Of Legends ranken: </h1>
+<h2> {{ player.age }} </h2>
