@@ -7,7 +7,29 @@ pagination:
 permalink: "players/{{ player.name | slug }}/"
 ---
 
-<img alt="{{ player.name }}" src="https://robohash.org/{{ player.name | slug }}?size=300x300">
+<div class="subcontainer">
+    <div class="leftsub">
+    <div class="accountdiv">
+        <div class="subinfo">
+            <div class="subsubinfoleft"></div>
+            <div class="subsubinforight"> <p> {{ player.accountname }} </p> </div>
+        </div>
+        <div class="subinfo">
+            <div class="subsubinfoleft"></div>
+            <div class="subsubinforight">
+            <p> Rank: {{ player.rank }} </p>
+            <p> Division: {{ player.division }} </p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <div class="rightsub">
+        <div class="humandiv">
+            <img class="picture" alt="{{ player.name }}" src="{{ player.selfiepath | slug }}">
+            <div class="name">{{ player.name }}</div>
+        </div>
+        
+    </div>
+</div>
 
-<h1>{{ player.name }} är av League Of Legends ranken: </h1>
-<h2> {{ player.age }} </h2>

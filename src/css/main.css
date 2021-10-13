@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .container {
-    max-width: 48rem;
+    max-width: 60rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;
@@ -34,8 +36,86 @@ main {
     margin-top: 1rem;
 }
 
+.subcontainer {
+    width: 100%;
+    height: 30rem;
+    background: rgb(179, 179, 179);
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftsub {
+    width: 40%;
+    height: 100%;
+    background: rgb(173, 173, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.rightsub {
+    width: 30%;
+    height: 100%;
+    background: rgb(173, 173, 173);
+}
+
+.name {
+    width: 100%;
+    min-height: 3rem;
+    max-height: fit-content;
+    text-align: center;
+    font-size: 2rem;
+    border: greenyellow 2px solid;
+}
+
+.accountdiv {
+    width: 80%;
+    height: 60%;
+    background: rgb(97, 97, 97);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subinfo {
+    width: 100%;
+    height: 40%;
+    background: rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+}
+
+.subsubinfoleft {
+    height: 100%;
+    width: 60%;
+    background: rgb(61, 61, 61);
+}
+
+.subsubinforight {
+    height: 100%;
+    width: 100%;
+    background: rgba(85, 59, 59, 0.795);
+    text-align: center;
+}
+
+
+
 footer {
     margin-top: 8rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background: rgb(100, 97, 97);
+    width: 100%;
+    text-align: center;
+}
+
+.picture {
+    width: 100%;
 }
 
 p {

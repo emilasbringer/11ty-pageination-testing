@@ -1,18 +1,34 @@
 [
     {
       "name": "Emil Åsbringer",
-      "age": "Gold 2"
+      "rank": "Gold",
+      "division": "2",
+      "accountname": "Pandan64",
+      "profilepictrueid": "",
+      "selfiepath": "/img/emil.jpg"
     },
     {
       "name": "Rasmus Öberg",
-      "age": "Plat 3"
+      "rank": "Platinum",
+      "division": "3",
+      "accountname": "Bärsh",
+      "profilepictrueid": "",
+      "selfiepath": ""
     },
     {
       "name": "Emil Söderlund",
-      "age": "Plat 1"
+      "rank": "Platinum",
+      "division": "4",
+      "accountname": "Emisod02",
+      "profilepictrueid": "",
+      "selfiepath": ""
     },
     {
       "name": "Sebastian Gabrielsson",
-      "age": "Silver 3"
+      "rank": "Silver",
+      "division": "3",
+      "accountname": "FatDinoo",
+      "profilepictrueid": "",
+      "selfiepath": ""
     }
   ]
