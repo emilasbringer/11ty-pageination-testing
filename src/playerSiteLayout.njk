@@ -11,14 +11,15 @@ permalink: "players/{{ player.name | slug }}/"
     <div class="leftsub">
     <div class="accountdiv">
         <div class="subinfo">
-            <div class="subsubinfoleft"></div>
-            <div class="subsubinforight"> <p> {{ player.accountname }} </p> </div>
+            <div class="subsubinfoleft" id="leftBox"> profilepic</div>
+            <div class="subsubinforight"> <p class="bigfont"> {{ player.accountname }} </p> </div>
         </div>
         <div class="subinfo">
             <div class="subsubinfoleft"></div>
             <div class="subsubinforight">
-            <p> Rank: {{ player.rank }} </p>
-            <p> Division: {{ player.division }} </p>
+            <p> Solo/Duo Rank</p>
+            <p class="bigfont blue" id="pRank">{{ player.rank }}</p>
+            <p> Division: <div class="bigfont blue">{{ player.division }}</div> </p>
             </div>
         </div>
     </div>
@@ -26,10 +27,11 @@ permalink: "players/{{ player.name | slug }}/"
     </div>
     <div class="rightsub">
         <div class="humandiv">
-            <img class="picture" alt="{{ player.name }}" src="{{ player.selfiepath | slug }}">
+            <img class="picture" alt="{{ player.name }}" src="{{ player.selfiepath | url }}">
             <div class="name">{{ player.name }}</div>
         </div>
         
     </div>
+    <script src="/scripts/emblemController.js"></script>
 </div>
 

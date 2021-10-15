@@ -10,21 +10,33 @@
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
 }
 
 .nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     list-style: none;
-    padding: 1rem 0;
     border-bottom: 2px solid black;
-    position: absolute;
+    box-sizing: border-box;
     width: 100%;
-    left: 0;
-    top: 0;
+    height: 3rem;
+}
+
+.headeritem {
+    background: rgb(56, 126, 255);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.headeritem:hover {
+    background: rgb(108, 159, 255);
+}
+
+.headeritem:active {
+    background: rgb(28, 107, 253);
 }
 
 .hyperbutton {
@@ -36,12 +48,14 @@ main {
     margin-top: 1rem;
 }
 
+
 .subcontainer {
     width: 100%;
-    height: 30rem;
+    height: 39rem;
     background: rgb(179, 179, 179);
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 20px;
 }
 
 .leftsub {
@@ -77,6 +91,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 .subinfo {
@@ -85,18 +100,21 @@ main {
     background: rgb(190, 190, 190);
     display: flex;
     align-items: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .subsubinfoleft {
     height: 100%;
     width: 60%;
-    background: rgb(61, 61, 61);
+    background: rgb(218, 218, 218);
 }
 
 .subsubinforight {
     height: 100%;
     width: 100%;
-    background: rgba(85, 59, 59, 0.795);
+    background: rgba(240, 240, 240, 0.795);
     text-align: center;
 }
 
@@ -119,5 +137,14 @@ footer {
 }
 
 p {
-    margin: 1rem 0;
+    margin: 0rem 0;
+    font-size: 1rem;
+}
+
+.bigfont {
+    font-size: 1.5rem;
+}
+
+.blue {
+    color: rgb(0, 132, 255);
 }

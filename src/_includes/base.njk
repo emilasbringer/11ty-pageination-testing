@@ -10,9 +10,9 @@
 </head>
 <body>
     <ul class="nav">
-            <li><a href="/">Hem</a></li>
+            <li class="headeritem" onclick="location.href='../../index.html';">Hem</li>
         {% for player in players %}
-            <li><a href="/players/{{ player.name | slug }}">{{ player.name }}</a></li>
+            <li class="headeritem" onclick="location.href='/players/{{ player.name | slug }}';">{{ player.name }}</li>
         {% endfor %}
     </ul>
     
