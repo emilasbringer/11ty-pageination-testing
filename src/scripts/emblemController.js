@@ -1,6 +1,7 @@
 var rank = document.querySelector("#pRank").innerHTML;
 var emblems = ["/img/divisionEmblems/iron.png", "/img/divisionEmblems/bronze.png", "/img/divisionEmblems/silver.png", "/img/divisionEmblems/gold.png", "/img/divisionEmblems/platinum.png", "/img/divisionEmblems/diamond.png", "/img/divisionEmblems/master.png", "/img/divisionEmblems/grandmaster.png", "/img/divisionEmblems/challenger.png"];
 var displayImageURL;
+
 /*
 const subinfoleft = document.getElementById("leftBox");
 var subinfoElement = document.createElement("div");
@@ -34,3 +35,4 @@ if(rank=="Grandmaster") {
 if(rank=="Challenger") {
     displayImageURL = emblems[8];
 }
+
